@@ -1,0 +1,672 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --light-background: #f8f9fa;
+    --text-color: #333;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5f3ff;
+}
+.Kucra_e a {
+    font-size: 3em;
+    text-decoration: none;
+}
+
+header nav {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centrer verticalement */
+    padding: 10px 50px; /* Espacement horizontal */
+     background-color: var(--light-background); /* Couleur claire */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre légère */
+    
+  }
+header nav ul {
+    font-size: 1rem;
+
+}
+  
+  header nav ul {
+  
+    display: flex;
+    gap: 20px; /* Espace uniforme entre les éléments */
+    list-style: none;
+    margin: 0;
+  }
+  
+  header nav ul li a {
+    font-size: 5em;
+    
+    color: #007bff;
+    color: var(--text-color); /* Couleur du texte */
+    font-size: 0.9rem; /* Taille des liens */
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+
+/* Style de base pour les liens de navigation */
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: color 0.3s ease; /* Ajoute une transition douce */
+}
+
+/* Changement de couleur au survol */
+header nav ul li a:hover {
+    color: #007bff; /* Couleur au survol */
+}
+/* Conteneur des icônes */
+
+.nav-icons {
+    display: flex; /* Met les icônes côte à côte */
+    gap: 15px; /* Espacement entre les icônes */
+  }
+  
+  .nav-icons a {
+    color: white; /* Couleur blanche pour le lien et l'icône */
+    font-size: 1.5rem; /* Taille des icônes */
+    transition: color 0.3s ease; /* Effet au survol */
+  }
+  
+  .nav-icons a:hover {
+    color: var(--primary-color); /* Couleur au survol */
+  }
+  
+  
+  /* Style des liens contenant les icônes */
+  .nav-icons a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: #333; /* Couleur des icônes */
+    font-size: 1.5rem; /* Taille des icônes */
+    transition: color 0.3s ease; /* Animation douce au survol */
+  }
+  
+  /* Couleur au survol */
+  .nav-icons a:hover {
+    color: #007bff; /* Couleur au survol (bleu par défaut) */
+  }
+  
+  /* Ajoutez des marges pour mieux positionner les icônes dans la barre */
+  nav {
+    display: flex;
+    justify-content: space-between; /* Espace entre la liste et les icônes */
+    align-items: center;
+  }
+  
+
+.subscribe-btn {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+/* Section Accueil */
+.section-accueil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    height: 90vh;
+    background: linear-gradient(to right, #e5f3ff, #d6edff);
+}
+
+.texte-accueil {
+    max-width: 50%;
+    color: var(--text-color);
+}
+
+.texte-accueil h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.texte-accueil p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.subscription-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.subscription-form input {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 25px 0 0 25px;
+    width: 300px;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-form input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.subscription-form button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-form button:hover {
+    background-color: var(--secondary-color);
+    /* transform: translateY(-2px); */
+}
+
+
+/* Conteneur principal de la section Accueil */
+.section-accueil {
+    padding-top: 6%;
+    padding-bottom: 8%;
+    padding-left: 17%;
+    padding-right: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Texte à gauche, image à droite */
+    /* padding: 40px; */
+    /* height: 90vh; Hauteur dynamique */
+    background: linear-gradient(to right, #e5f3ff, #d6edff); /* Dégradé doux */
+  }
+  
+  .texte-accueil {
+    max-width: 50%; /* Ajuste la largeur pour donner de l'espace */
+    color: var(--text-color);
+  }
+  
+  .texte-accueil h1 {
+    font-size: 2.5rem; /* Plus grand titre */
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  
+  .texte-accueil p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+ /* Conteneur du formulaire */
+.subscription-form {
+    display: flex;
+    align-items: center; /* Centrer verticalement */
+     gap: 0px; /*Espace entre l'input et le bouton*/
+}
+  
+  /* Champ de saisie */
+  .subscription-form input {
+    padding: 12px 15px;
+    font-size: 1rem; /* Taille du texte */
+    border: 1px solid #ccc; /* Bordure légère */
+    border-radius: 25px 0 0 25px; /* Coins arrondis gauche */
+    width: 250px; /* Largeur du champ */
+    outline: none; /* Supprime la bordure de focus par défaut */
+  }
+  
+  /* Effet au focus pour le champ */
+  .subscription-form input:focus {
+    border-color: #007bff; /* Couleur bleue au focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Ombre bleue douce */
+  }
+  
+  /* Bouton Subscribe */
+  .subscribe-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white; /* Texte en blanc */
+    background-color: #007bff; /* Bleu principal */
+    border: none;
+    border-radius: 0 25px 25px 0; /* Coins arrondis droit */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+  }
+  
+  /* Effet au survol */
+  .subscribe-btn:hover {
+    background-color: #0056b3; /* Bleu plus foncé */
+    transform: translateY(-2px); /* Légère élévation */
+  }
+  
+  /* Effet au clic */
+  .subscribe-btn:active {
+    transform: translateY(0); /* Revenir à l'état initial */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombre réduite */
+  }
+  
+  
+  .image-accueil img {
+    padding-top: 25%;
+    padding-left: 40%;
+    width: 180%;
+    /* max-width: 400px; Largeur maximale */
+    /* height: auto; */
+    /* animation: float 3s ease-in-out infinite; / Ajout d'une animation douce  */
+  }
+  
+  /* Animation flottante */
+  /* @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  } */
+  
+
+
+
+
+.produits-images {
+    
+    display: inline-block;
+    width: 20%;
+    padding: 30px;
+    margin-left:5%;
+    text-align: center;
+} 
+.produits-images img {
+    padding-left: 26%;
+    display: block;
+    margin: 0 auto; /* Centre les images */
+    /* border-radius: 5%; */
+    width: 100%;
+    height: auto;
+    
+}
+.Nos-services h2{
+    text-align: center;
+}
+
+.Notre_equipe h2{
+    text-align: center;
+}
+.Notre_equipe p {
+    text-align: center;
+}
+
+#equipe {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    width: 190px; /* Ajuste la taille de chaque membre */
+    text-align: center;
+    margin: 30px;
+}
+
+.team-member h3 {
+    font-size: 1rem; /* Taille du nom */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacement entre le nom et l'image */
+}
+
+.image-container {
+    position:relative;
+    overflow: hidden ;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.image-container:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    gap: 10px;
+}
+
+.image-container:hover .social-icons {
+    opacity: 1;
+}
+
+.team-member .role {
+    font-size: 0.9rem; /* Taille du texte du rôle */
+    color: #666;
+    margin-top: 10px; /* Espacement entre l'image et le rôle */
+}
+
+
+.social-icons a {
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+.parallax {
+    height:750px;
+    background-image: url('./images/parallax.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2rem;
+}
+
+
+.primo-blog {
+    
+    display: inline-block;
+    width: 20%;
+    padding: 30px;
+    margin-left:5%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.primo-blog img {
+    display: block;
+    margin: 0 auto; /* Centre les images */
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5%;
+}
+.primo-blog {
+    transition: filter 0.3s ease; /* Transition douce pour l'effet */
+}
+
+.primo-blog:hover {
+    filter: brightness(70%); /* Réduit la luminosité à 70% */
+}
+
+.sociale-icon {
+    text-align: center; /* Centrer les icônes dans le footer */
+    padding: 5px 0;
+}
+
+.sociale-icon a {
+    margin: 0 10px; /* Espacement horizontal entre les icônes */
+    display: inline-block;
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+.sociale-icon .icon {
+    width: 5px; /* Taille des icônes */
+    height: auto;
+    transition: transform 0.3s ease; /* Ajout d'un effet de zoom au survol */
+}
+
+.sociale-icon .icon:hover {
+    transform: scale(1.2); /* Agrandit légèrement l'icône au survol */
+}
+
+footer {
+    
+    display: flex;
+    justify-content:space-between;
+    padding: 3px;
+    background-color: white;  
+    
+
+}
+.contact-button{
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+   background-color: #007bff;
+   
+}
+/* section : intro-pricing */
+#intro-pricing {
+    display: flex; /* Aligne le contenu en deux colonnes */
+    align-items: center; /* Centre verticalement */
+    justify-content: space-between; /* Espace entre le texte et l'image */
+    padding: 50px 20px; /* Espacement autour de la section */
+    background-color: #f8f9fa; /* Couleur de fond légère */
+}
+
+#intro-pricing .intro-content {
+    display: flex;
+    flex-direction: row; /* Organise le texte et l'image en ligne */
+    justify-content: space-between;
+    max-width: 1200px; /* Limite la largeur totale */
+    margin: 0 auto; /* Centre horizontalement */
+    gap: 30px; /* Espacement entre le texte et l'image */
+}
+
+#intro-pricing .text {
+    flex: 1; /* Le texte occupe plus de place */
+}
+
+#intro-pricing h2 {
+    font-size: 2rem; /* Taille du titre */
+    color: var(--text-color); /* Couleur du texte principale */
+    margin-bottom: 15px; /* Espacement sous le titre */
+}
+
+#intro-pricing p {
+    font-size: 1rem;
+    color: #666; /* Texte gris pour contraste doux */
+    margin-bottom: 20px;
+}
+
+#intro-pricing .stats {
+    display: flex; /* Affiche les statistiques en ligne */
+    gap: 20px; /* Espacement entre chaque statistique */
+    margin-bottom: 20px;
+}
+
+#intro-pricing .stat-item h3 {
+    font-size: 1.5rem; /* Taille des chiffres */
+    color: var(--primary-color); /* Couleur principale */
+}
+
+#intro-pricing .stat-item p {
+    font-size: 0.9rem; /* Taille plus petite pour la description */
+    color: #666;
+}
+
+#intro-pricing .learn-more-btn {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#intro-pricing .learn-more-btn:hover {
+    background-color: var(--secondary-color); /* Couleur plus foncée au survol */
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+#intro-pricing .image {
+    flex: 1; /* L'image occupe une partie équivalente au texte */
+    text-align: center;
+}
+
+#intro-pricing .image img {
+    width: 100%; /* L'image occupe toute sa largeur disponible */
+    max-width: 500px; /* Largeur maximale de l'image */
+    height: auto; /* Conserve les proportions */
+}
+
+
+/* Section Pricing */
+
+
+#pricing {
+    
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+}
+
+#pricing h2 {
+  
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pricing-subtext {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: white;
+    
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+   
+    
+    text-align: center;
+    /* position: relative; */
+}
+
+.pricing-card h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.price {
+    font-size: 2em;
+    color: #1e90ff;
+    margin: 20px 0;
+}
+
+.price span {
+    font-size: 0.5em;
+    color: #666;
+}
+
+.pricing-card ul {
+    list-style-type: none;
+    padding: 0;
+    color: #666;
+    margin: 20px 0;
+}
+
+.pricing-card li {
+    margin: 20px 0;
+}
+.pricing-card.highlighted{
+    margin-top: -15px;
+    margin-bottom: 7px;
+}
+
+.join-btn {
+    background-color: #1e90ff;
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.join-btn:hover {
+    background-color: #187bcd;
+}
+
+/* Badge de réduction pour l'option Advanced */
+.highlighted {
+    border: 2px solid #1e90ff;
+   
+}
+
+.discount-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff6347;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 0.8em;
+}
+.badge {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+    padding: 30px 5px;
+    border-radius: 8px;
+}
+.pricing-card.highlighted {
+    position: relative; /* Nécessaire pour positionner le badge */
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #141313;
+    border-radius: 12px;
+}
+
+
+ footer{
+    margin-top: 5%;
+}
+
+  
