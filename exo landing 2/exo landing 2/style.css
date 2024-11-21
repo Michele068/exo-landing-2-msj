@@ -318,7 +318,10 @@ header nav ul li a:hover {
     text-align: center;
 }
 
-.Notre_equipe h2{
+.Nos_services h2{
+    text-align: center;
+}
+.Nos_services p{
     text-align: center;
 }
 .Notre_equipe p {
@@ -596,7 +599,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Adaptation pour les petits écrans */
+    /* flex-wrap: wrap; Adaptation pour les petits écrans  */
 }
 
 /* Chaque article */
