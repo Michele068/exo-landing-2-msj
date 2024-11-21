@@ -455,14 +455,14 @@ header nav ul li a:hover {
     padding-bottom: 5%;
 }
 
-.primo-blog img {
-    display: block;
+ .primo-blog img {
+     display: block; 
     margin: 0 auto; /* Centre les images */
     border-radius: 5%;
     width: 100%;
     height: auto;
     padding-bottom: 5%;
-}
+} 
 .primo-blog {
     transition: filter 0.3s ease; /* Transition douce pour l'effet */
 }
@@ -619,7 +619,7 @@ header nav ul li a:hover {
 .blog-image-container {
     position: relative; /* Nécessaire pour l'overlay */
     width: 100%;
-    overflow: hidden; /* Cache les débordements */
+     overflow: hidden; /*Cache les débordements */
 }
 
 .blog-image-container img {
@@ -632,7 +632,7 @@ header nav ul li a:hover {
 }
 
 /* Overlay pour auteur et date */
-.blog-overlay {
+ .blog-overlay {
     position: absolute;
     top: 50%; /* Centre verticalement */
     left: 50%; /* Centre horizontalement */
@@ -641,7 +641,7 @@ header nav ul li a:hover {
     text-align: center; /* Centre le texte */
     opacity: 0; /* Invisible par défaut */
     transition: opacity 0.3s ease; /* Transition fluide pour l'apparition */
-}
+} 
 
 .blog-image-container:hover .blog-overlay {
     opacity: 1; /* Devient visible au survol */
@@ -699,7 +699,7 @@ header nav ul li a:hover {
 
 /* section : intro-pricing */
 #intro-pricing {
-    display: flex; /* Aligne le contenu en deux colonnes */
+     display: flex;/* Aligne le contenu en deux colonnes */
     align-items: center; /* Centre verticalement */
     justify-content: space-between; /* Espace entre le texte et l'image */
     padding: 50px 20px; /* Espacement autour de la section */
