@@ -16,10 +16,12 @@ body {
     padding: 0;
     background-color: white;
 }
-.Kucra_e a {
-    font-size: 3em;
+ header nav .Kucra_e  ul li a {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-}
+    font-weight: 700; 
+ }
 
 header nav {
     
@@ -44,8 +46,8 @@ header nav ul {
     margin: 0;
   }
   
-  header nav ul li a {
-    font-size: 5em;
+  header nav  ul li a {
+    font-size: 1em;
     
     color: #007bff;
     color: var(--text-color); /* Couleur du texte */
@@ -105,9 +107,6 @@ header nav ul li a:hover {
     align-items: center;
   }
   
-.Nos-services p{
-    text-align: center;
-}
 
 .subscribe-btn {
     padding: 10px 20px;
@@ -279,9 +278,26 @@ header nav ul li a:hover {
     padding-top: 0%;
     padding-left: 20%;
     width: 200%;
+    /* max-width: 400px; Largeur maximale */
+    /* height: auto; */
+    /* animation: float 3s ease-in-out infinite; / Ajout d'une animation douce  */
   }
-   
-  .produits-images {
+  
+  /* Animation flottante */
+  /* @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  } */
+  
+
+
+
+
+.produits-images {
     
     display: inline-block;
     width: 20%;
@@ -380,43 +396,44 @@ header nav ul li a:hover {
     font-size: 1.2rem;
 }
 
+/* Section Parallax */
 .parallax {
-    height:550px;
+    height: 300px;
     background-image: url('./images/parallax.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    color:white;
-    font-size: 2rem;
-    padding-right: 10%;
-}
-.para-btn{
-    position: absolute;
-    opacity: 2;
-   margin-top: 15%;
-    padding: 1%;
-    transition: opacity 0.3s ease;
-   
-   
-    
-   
-}
-.parallax h4{
-     text-shadow: 1px 1px 2px black; /* shadow ajoute une ombre au texte */
-   
-    position: absolute;
-    margin-top: 5px;
-    margin-left: 35px
-    
-}
-.parallax p{
-    text-shadow: 1px 1px 2px black;
-    /* color:blanchedalmond; */
+    justify-content: center;
+    color: white;
     text-align: center;
-    margin-bottom: -20px;
+    padding: 20px;
+}
+
+.parallax h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.parallax p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.para-btn {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.para-btn:hover {
+    background-color: var(--secondary-color);
 }
 
 
@@ -428,13 +445,6 @@ header nav ul li a:hover {
     margin-left:5%;
     text-align: center;
     padding-bottom: 5%;
-}
-.Notre_blog h4{
-    text-align: center;
-}
-.Notre_blog p{
-    /* margin: 1px; */
-    text-align: center;
 }
 
 .primo-blog img {
@@ -452,7 +462,6 @@ header nav ul li a:hover {
 .primo-blog:hover {
     filter: brightness(80%); /* Réduit la luminosité à 70% */
 }
-
 
 .sociale-icon {
     text-align: center; /* Centrer les icônes dans le footer */
@@ -487,8 +496,199 @@ header nav ul li a:hover {
     border-radius: 5px;
     color: aliceblue;
    background-color: #007bff;
-   
+
 }
+
+/* Annotation au-dessus de la section Blog */
+.blog-annotation {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Conteneur principal de la section blog */
+#blog {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+/* Articles de blog */
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permet d'adapter les articles aux petits écrans */
+}
+
+.blog-post {
+    width: 30%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.blog-post h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.blog-post a {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+/* Section des commentaires */
+.blog-comments {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.blog-comments p {
+    font-size: 0.9rem;
+    color: #666;
+}
+/* Annotation au-dessus de la section Blog */
+.blog-annotation {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Conteneur principal de la section Blog */
+#blog {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+/* Conteneur des articles */
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Adaptation pour les petits écrans */
+}
+
+/* Chaque article */
+.blog-post {
+    width: 30%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Images de blog */
+.blog-image-container {
+    position: relative; /* Nécessaire pour l'overlay */
+    width: 100%;
+    overflow: hidden; /* Cache les débordements */
+}
+
+.blog-image-container img {
+    width: 100%; /* Image occupe tout l'espace disponible */
+    transition: filter 0.3s ease; /* Transition pour l'effet au survol */
+}
+
+.blog-image-container:hover img {
+    filter: brightness(50%); /* Assombrissement de l'image au survol */
+}
+
+/* Overlay pour auteur et date */
+.blog-overlay {
+    position: absolute;
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%);
+    color: white; /* Texte blanc */
+    text-align: center; /* Centre le texte */
+    opacity: 0; /* Invisible par défaut */
+    transition: opacity 0.3s ease; /* Transition fluide pour l'apparition */
+}
+
+.blog-image-container:hover .blog-overlay {
+    opacity: 1; /* Devient visible au survol */
+}
+
+.blog-author {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold; /* Met l'auteur en gras */
+    margin-bottom: 5px;
+}
+
+.blog-date {
+    display: block;
+    font-size: 0.9rem;
+    color: #ccc; /* Couleur légèrement grise */
+}
+
+/* Titre et description */
+.blog-post h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Lien Read more */
+.blog-post a {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+/* Section des commentaires */
+.blog-comments {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.blog-comments p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
 /* section : intro-pricing */
 #intro-pricing {
     display: flex; /* Aligne le contenu en deux colonnes */
@@ -701,45 +901,178 @@ footer {
     
 
 }
-.image span {
-   
-    padding-bottom: 1px;
-    visibility:hidden;
-}
- 
-.image img:hover + span {
-    position:relative;
-    visibility: visible;
+/* 1. Pour les tablettes et écrans moyens (768px ou moins) */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column; /* Place les éléments en colonne */
+        padding: 20px; /* Réduit les marges */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Les liens passent en colonne */
+        gap: 10px; /* Espacement réduit entre les liens */
+    }
+
+    .nav-icons {
+        justify-content: center; /* Centre les icônes sociales */
+        margin-top: 10px; /* Ajoute un espace au-dessus */
+    }
+
+    .section-accueil {
+        flex-direction: column; /* Texte et image passent en colonne */
+        padding: 20px; /* Réduit l'espacement général */
+        text-align: center; /* Centre le texte */
+    }
+
+    .texte-accueil {
+        max-width: 100%; /* Le texte prend toute la largeur */
+    }
+
+    .image-accueil img {
+        width: 80%; /* Image réduite */
+        margin: 20px auto; /* Centre l'image */
+    }
+
+    .primo-blog {
+        width: 80%; /* Les articles de blog prennent plus de place */
+        margin: 20px auto; /* Centre les articles */
+    }
+
+    .team-member {
+        width: 90%; /* Les membres d'équipe occupent toute la largeur */
+        margin: 10px auto; /* Espacement vertical entre les membres */
+    }
+
+    .pricing-cards {
+        flex-direction: column; /* Les cartes tarifaires passent en colonne */
+        gap: 20px; /* Ajoute un espacement vertical */
+    }
+
+    .pricing-card {
+        width: 90%; /* Les cartes prennent presque toute la largeur */
+        margin: 0 auto; /* Centre les cartes */
+    }
 }
 
-@media only screen and (max-width: 768px) {
+/* 2. Pour les mobiles et petits écrans (480px ou moins) */
+@media (max-width: 480px) {
+    header nav {
+        padding: 10px; /* Réduit les marges au minimum */
+    }
 
-header nav  {
-   position: relative;
-   
-flex-direction: column;
-}
-header nav ul {
-    position: relative;
-    padding:2px;
-    margin-right:5px;
-flex-direction: column;
-}
-.nav-icons{
-    padding-top: 10px;
-}
-.section-accueil h1{
-    font-size:15px;
-    display: flex;
-}
-.section-accueil p{
-    font-size: 12px;
+    header nav ul {
+        gap: 5px; /* Espacement minimal entre les liens */
+    }
 
+    .section-accueil {
+        padding: 10px; /* Réduit l'espacement général */
+    }
 
-}
-.section-accueil input{
-    width: 130px;
-}
+    .texte-accueil h1 {
+        font-size: 1.5rem; /* Réduit la taille du titre */
+    }
 
- 
-}  
+    .texte-accueil p {
+        font-size: 0.9rem; /* Texte plus petit pour les petits écrans */
+    }
+
+    .image-accueil img {
+        width: 100%; /* Image s'adapte à la largeur de l'écran */
+    }
+
+    .primo-blog {
+        width: 100%; /* Les articles de blog prennent toute la largeur */
+    }
+
+    .team-member {
+        width: 100%; /* Les membres d'équipe occupent toute la largeur */
+    }
+
+    .pricing-cards {
+        gap: 10px; /* Réduit l'espacement entre les cartes */
+    }
+
+    .pricing-card {
+        width: 100%; /* Les cartes tarifaires occupent toute la largeur */
+    }
+
+    footer {
+        flex-direction: column; /* Place les éléments du footer en colonne */
+        text-align: center; /* Centre le contenu du footer */
+        gap: 10px; /* Ajoute un espace vertical */
+    }
+
+    .sociale-icon {
+        margin-bottom: 10px; /* Espacement sous les icônes sociales */
+    }
+}
+/* Styles pour les smartphones : Écrans de 480px ou moins */
+@media (max-width: 480px) {
+    /* 1. Ajuster la barre de navigation */
+    header nav {
+        flex-direction: column; /* Aligne les éléments en colonne */
+        padding: 10px; /* Réduit les marges */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Place les liens verticalement */
+        gap: 5px; /* Réduit l'espacement entre les liens */
+        text-align: center; /* Centre les liens */
+    }
+
+    .nav-icons {
+        margin-top: 10px; /* Ajoute de l'espace au-dessus des icônes sociales */
+        justify-content: center; /* Centre les icônes */
+    }
+
+    /* 2. Section Accueil */
+    .section-accueil {
+        flex-direction: column; /* Texte et image passent en colonne */
+        padding: 20px; /* Réduit les marges */
+        text-align: center; /* Centre le texte */
+    }
+
+    .texte-accueil {
+        max-width: 100%; /* Texte prend toute la largeur */
+    }
+
+    .image-accueil img {
+        width: 100%; /* Image prend toute la largeur disponible */
+        margin: 20px auto; /* Centre l'image avec un espace */
+    }
+
+    /* 3. Section Blog */
+    .primo-blog {
+        width: 100%; /* Les articles prennent toute la largeur */
+        margin: 20px auto; /* Ajoute un espacement vertical */
+    }
+
+    /* 4. Section Équipe */
+    .team-member {
+        width: 100%; /* Les membres d'équipe prennent toute la largeur */
+        margin: 20px auto; /* Ajoute de l'espace vertical */
+        text-align: center; /* Centre le contenu */
+    }
+
+    /* 5. Section Tarifs */
+    .pricing-cards {
+        flex-direction: column; /* Cartes tarifaires empilées */
+        gap: 20px; /* Espacement vertical entre les cartes */
+    }
+
+    .pricing-card {
+        width: 100%; /* Les cartes prennent toute la largeur */
+        margin: 0 auto; /* Centre les cartes */
+    }
+
+    /* 6. Footer */
+    footer {
+        flex-direction: column; /* Alignement vertical */
+        text-align: center; /* Centre le texte */
+        gap: 10px; /* Ajoute un espacement vertical */
+    }
+
+    .sociale-icon {
+        margin-bottom: 10px; /* Espace sous les icônes sociales */
+    }
+}
