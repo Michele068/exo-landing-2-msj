@@ -3,6 +3,10 @@
     --secondary-color: #0056b3;
     --light-background: #f8f9fa;
     --text-color: #333;
+    
+}
+header nav{
+    background-color: #007bff;
 }
 
 
@@ -10,7 +14,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e5f3ff;
+    background-color: white;
 }
 .Kucra_e a {
     font-size: 3em;
@@ -23,12 +27,12 @@ header nav {
     justify-content: space-between;
     align-items: center; /* Centrer verticalement */
     padding: 10px 50px; /* Espacement horizontal */
-     background-color: var(--light-background); /* Couleur claire */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre légère */
+     /* background-color: var(--light-background);  */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Ajout d'une ombre légère */
     
   }
 header nav ul {
-    font-size: 1rem;
+    font-size: 1em;
 
 }
   
@@ -54,7 +58,7 @@ header nav ul {
 /* Style de base pour les liens de navigation */
 header nav ul li a {
     text-decoration: none;
-    color: black;
+    color:white;
     padding: 10px;
     transition: color 0.3s ease; /* Ajoute une transition douce */
 }
@@ -70,8 +74,8 @@ header nav ul li a:hover {
     gap: 15px; /* Espacement entre les icônes */
   }
   
-  .nav-icons a {
-    color: white; /* Couleur blanche pour le lien et l'icône */
+.nav-icons a {
+    
     font-size: 1.5rem; /* Taille des icônes */
     transition: color 0.3s ease; /* Effet au survol */
   }
@@ -84,7 +88,7 @@ header nav ul li a:hover {
   /* Style des liens contenant les icônes */
   .nav-icons a {
     text-decoration: none; /* Supprime le soulignement */
-    color: #333; /* Couleur des icônes */
+    color:white; /* Couleur des icônes */
     font-size: 1.5rem; /* Taille des icônes */
     transition: color 0.3s ease; /* Animation douce au survol */
   }
@@ -101,6 +105,9 @@ header nav ul li a:hover {
     align-items: center;
   }
   
+.Nos-services p{
+    text-align: center;
+}
 
 .subscribe-btn {
     padding: 10px 20px;
@@ -269,29 +276,12 @@ header nav ul li a:hover {
   
   
   .image-accueil img {
-    padding-top: 25%;
-    padding-left: 40%;
-    width: 180%;
-    /* max-width: 400px; Largeur maximale */
-    /* height: auto; */
-    /* animation: float 3s ease-in-out infinite; / Ajout d'une animation douce  */
+    padding-top: 0%;
+    padding-left: 20%;
+    width: 200%;
   }
-  
-  /* Animation flottante */
-  /* @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  } */
-  
-
-
-
-
-.produits-images {
+   
+  .produits-images {
     
     display: inline-block;
     width: 20%;
@@ -391,7 +381,7 @@ header nav ul li a:hover {
 }
 
 .parallax {
-    height:750px;
+    height:550px;
     background-image: url('./images/parallax.png');
     background-attachment: fixed;
     background-size: cover;
@@ -399,8 +389,34 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color:white;
     font-size: 2rem;
+    padding-right: 10%;
+}
+.para-btn{
+    position: absolute;
+    opacity: 2;
+   margin-top: 15%;
+    padding: 1%;
+    transition: opacity 0.3s ease;
+   
+   
+    
+   
+}
+.parallax h4{
+     text-shadow: 1px 1px 2px black; /* shadow ajoute une ombre au texte */
+   
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 35px
+    
+}
+.parallax p{
+    text-shadow: 1px 1px 2px black;
+    /* color:blanchedalmond; */
+    text-align: center;
+    margin-bottom: -20px;
 }
 
 
@@ -412,6 +428,13 @@ header nav ul li a:hover {
     margin-left:5%;
     text-align: center;
     padding-bottom: 5%;
+}
+.Notre_blog h4{
+    text-align: center;
+}
+.Notre_blog p{
+    /* margin: 1px; */
+    text-align: center;
 }
 
 .primo-blog img {
@@ -427,8 +450,9 @@ header nav ul li a:hover {
 }
 
 .primo-blog:hover {
-    filter: brightness(70%); /* Réduit la luminosité à 70% */
+    filter: brightness(80%); /* Réduit la luminosité à 70% */
 }
+
 
 .sociale-icon {
     text-align: center; /* Centrer les icônes dans le footer */
@@ -439,6 +463,7 @@ header nav ul li a:hover {
     margin: 0 10px; /* Espacement horizontal entre les icônes */
     display: inline-block;
     text-decoration: none; /* Supprime le soulignement des liens */
+    color: white;
 }
 
 .sociale-icon .icon {
@@ -450,17 +475,14 @@ header nav ul li a:hover {
 .sociale-icon .icon:hover {
     transform: scale(1.2); /* Agrandit légèrement l'icône au survol */
 }
-
-footer {
-    
-    display: flex;
-    justify-content:space-between;
-    padding: 3px;
-    background-color: white;  
-    
-
+.sociale-icon p{
+    text-align: center;
+    color: white;
 }
+
+
 .contact-button{
+    
     border: none;
     border-radius: 5px;
     color: aliceblue;
@@ -585,7 +607,12 @@ footer {
     text-align: center;
     /* position: relative; */
 }
-
+#tarifs h2{
+    text-align: center;
+}
+#tarifs p{
+    text-align: center;
+}
 .pricing-card h3 {
     font-size: 1.5em;
     color: #333;
@@ -663,10 +690,56 @@ footer {
     border: 1px solid #141313;
     border-radius: 12px;
 }
+footer {
+     /* margin-bottom: 5%; */
+    margin-top: 10%; 
+    padding-bottom: 10%;
+    /* display: flex; */
+    justify-content:space-between;
+    padding: 30px;
+    background-color: black;  
+    
 
-
- footer{
-    margin-top: 5%;
+}
+.image span {
+   
+    padding-bottom: 1px;
+    visibility:hidden;
+}
+ 
+.image img:hover + span {
+    position:relative;
+    visibility: visible;
 }
 
-  
+@media only screen and (max-width: 768px) {
+
+header nav  {
+   position: relative;
+   
+flex-direction: column;
+}
+header nav ul {
+    position: relative;
+    padding:2px;
+    margin-right:5px;
+flex-direction: column;
+}
+.nav-icons{
+    padding-top: 10px;
+}
+.section-accueil h1{
+    font-size:15px;
+    display: flex;
+}
+.section-accueil p{
+    font-size: 12px;
+
+
+}
+.section-accueil input{
+    width: 130px;
+}
+
+ 
+}  
