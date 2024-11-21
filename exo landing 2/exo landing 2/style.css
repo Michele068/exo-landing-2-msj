@@ -336,6 +336,9 @@ header nav ul li a:hover {
     justify-content: center;
     gap: 20px;
 }
+.team-member h2 p{
+    margin-bottom: 10px;
+}
 
 .team-member {
     width: 190px; /* Ajuste la taille de chaque membre */
