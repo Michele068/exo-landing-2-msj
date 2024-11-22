@@ -899,7 +899,7 @@ header nav ul li a:hover {
     border-radius: 8px;
 }
 .pricing-card.highlighted {
-    position: relative; /* Nécessaire pour positionner le badge */
+    position: relative; /* Nécessaire pour mettre le badge */
     text-align: center;
     padding: 20px;
     border: 1px solid #141313;
@@ -917,3 +917,62 @@ footer {
 
 }
 
+/*smartphone*/
+@media (max-width: 480px) {
+    
+    header nav {
+        flex-direction: column; /* Aligne les éléments en colonne */
+        padding: 1px; /* Réduit les marges */
+    }
+    header nav ul li a{ /*centre la nav bar */
+        margin-right: 50px;
+    }
+
+    header nav ul {
+        flex-direction: column; /* Place les liens verticalement */
+        gap: 5px; /* Réduit l'espacement entre les liens */
+        text-align: center; /* Centre les liens */
+    }
+
+    .nav-icons {
+        margin-top: 10px; /* Ajoute de l'espace au-dessus des icônes réseaux */
+        justify-content: center; /* Centre les icônes */
+    }
+
+    /* 2. Section Accueil */
+    .section-accueil {
+        flex-direction: column; /* en colonne */
+        padding: 20px; /* Réduit les marges */
+        text-align: center; /* Centre le texte */
+    }
+
+    .texte-accueil {
+        max-width: 100%; /* Texte prend tout l'espace */
+    }
+
+    .image-accueil img {
+        width: 100%; /* Image prend toute la largeur disponible */
+        margin: 28px auto; /* Centre l'image avec un espace */
+        padding-bottom:30%;
+        padding-left: 1%;
+    }
+
+   .produits-images{
+    display: block;
+    padding-left: 30%;
+   }
+   .produits-images img{
+    width:150%
+   }
+   .Notre_equipe{
+    padding-left: 10%;
+   }
+   .blog-container{
+    display: block;
+    
+    max-width: 200%;
+    padding-left: 15%;
+  }
+ 
+ 
+}
