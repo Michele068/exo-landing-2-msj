@@ -959,10 +959,10 @@ footer {
 
    .produits-images{
     display: block;
-    padding-left: 30%;
+    padding-left: 20%;
    }
    .produits-images img{
-    width:150%
+    width:200%
    }
    .Notre_equipe{
     padding-left: 10%;
@@ -972,6 +972,10 @@ footer {
     
     max-width: 200%;
     padding-left: 15%;
+  }
+  .blog-post{
+    margin:2%;
+
   }
  
  
