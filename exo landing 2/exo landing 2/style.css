@@ -267,7 +267,7 @@ header nav ul li a:hover {
     transform: translateY(-2px); /* Légère élévation */
   }
   
-  /* Effet au clic */
+  /* Effet clic */
   .subscribe-btn:active {
     transform: translateY(0); /* Revenir à l'état initial */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombre réduite */
@@ -278,35 +278,25 @@ header nav ul li a:hover {
     padding-top: 0%;
     padding-left: 20%;
     width: 200%;
-    /* max-width: 400px; Largeur maximale */
-    /* height: auto; */
-    /* animation: float 3s ease-in-out infinite; / Ajout d'une animation douce  */
+  
   }
   
-  /* Animation flottante */
-  /* @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  } */
-  
+
 
 
 
 
 .produits-images {
     
+    padding-left: 6%;
     display: inline-block;
-    width: 20%;
-    padding: 30px;
-    margin-left:5%;
+    width: 22%;
+    padding: 20px;
+    /* margin-left:1%; */
     text-align: center;
 } 
 .produits-images img {
-    padding-left: 26%;
+    padding-left: 45%;
     display: block;
     margin: 0 auto; /* Centre les images */
     /* border-radius: 5%; */
@@ -325,6 +315,7 @@ header nav ul li a:hover {
     text-align: center;
 }
 .Notre_equipe p {
+    color: gray;
     text-align: center;
 }
 
@@ -470,6 +461,32 @@ header nav ul li a:hover {
 .primo-blog:hover {
     filter: brightness(80%); /* Réduit la luminosité à 70% */
 }
+/* Espacement autour des sections */
+#blog {
+    padding: 60px 20px; /* Ajoute un espacement au-dessus et au-dessous */
+}
+
+.blog-container {
+    margin: 0 auto; /* Centre le contenu */
+    max-width: 1200px; /* Limite la largeur */
+}
+
+.blog-post a {
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.blog-post a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
 
 .sociale-icon {
     text-align: center; /* Centrer les icônes dans le footer */
@@ -523,13 +540,6 @@ header nav ul li a:hover {
     background-color: #f9f9f9;
 }
 
-/* Articles de blog */
-.blog-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap; /* Permet d'adapter les articles aux petits écrans */
-}
 
 .blog-post {
     width: 30%;
@@ -601,7 +611,9 @@ header nav ul li a:hover {
 .blog-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
+    width: 200%;
+    max-width: 90%;
     /* flex-wrap: wrap; Adaptation pour les petits écrans  */
 }
 
@@ -620,12 +632,9 @@ header nav ul li a:hover {
     position: relative; /* Nécessaire pour l'overlay */
     width: 100%;
      overflow: hidden; /*Cache les débordements */
+    
 }
 
-.blog-image-container img {
-    width: 100%; /* Image occupe tout l'espace disponible */
-    transition: filter 0.3s ease; /* Transition pour l'effet au survol */
-}
 
 .blog-image-container:hover img {
     filter: brightness(50%); /* Assombrissement de l'image au survol */
