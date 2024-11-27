@@ -951,12 +951,16 @@ footer {
     display: block;
     
     max-width: 200%;
-    padding-left: 15%;
+    padding-left: 10%;
   }
   .blog-post{
-    margin:2%;
+    margin:3%;
 
   }
- 
- 
+ .Notre_equipe{
+    padding-right: 10%;
+ }
+ .input{
+    padding-left: 5px;
+ }
 }
