@@ -30,16 +30,12 @@ header nav {
     align-items: center; /* Centrer verticalement */
     padding: 10px 50px; /* Espacement horizontal */
      /* background-color: var(--light-background);  */
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Ajout d'une ombre légère */
+   
     
   }
-header nav ul {
-    font-size: 1em;
 
-}
-  
   header nav ul {
-  
+    font-size: 1em;
     display: flex;
     gap: 20px; /* Espace uniforme entre les éléments */
     list-style: none;
@@ -69,8 +65,9 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #007bff; /* Couleur au survol */
 }
-/* Conteneur des icônes */
 
+
+/* Conteneur des icônes */
 .nav-icons {
     display: flex; /* Met les icônes côte à côte */
     gap: 15px; /* Espacement entre les icônes */
@@ -304,9 +301,6 @@ header nav ul li a:hover {
     height: auto;
     
 }
-.Nos-services h2{
-    text-align: center;
-}
 
 .Nos_services h2{
     text-align: center;
@@ -441,27 +435,13 @@ header nav ul li a:hover {
 }
 
 
-
-
- .primo-blog img {
-     display: block; 
-    margin: 0 auto; /* Centre les images */
-    border-radius: 5%;
-    width: 100%;
-    height: auto;
-    padding-bottom: 5%;
-} 
-
-
-
-
 #blog {
     padding: 60px 20px; /*  espacement au-dessus et au-dessous */
 }
 
 .blog-container {
-    margin: 0 auto; /* Centre le contenu */
-    max-width: 1200px; /* Limite la largeur */
+    margin: 0 auto; /*Centre le contenu*/
+    /* max-width: 1200px; Limite la largeur */
 }
 
 .blog-post a {
