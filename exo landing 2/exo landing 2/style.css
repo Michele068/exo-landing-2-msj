@@ -900,6 +900,9 @@ footer {
 /*smartphone*/
 @media (max-width: 480px) {
     
+    nav{
+        font-size: 35px;
+    }
     header nav {
         flex-direction: column; /* Aligne les éléments en colonne */
         padding: 1px; /* Réduit les marges */
@@ -922,7 +925,7 @@ footer {
     /* 2. Section Accueil */
     .section-accueil {
         flex-direction: column; /* en colonne */
-        padding: 20px; /* Réduit les marges */
+        padding: 15px; /* Réduit les marges */
         text-align: center; /* Centre le texte */
     }
 
@@ -934,26 +937,33 @@ footer {
         width: 100%; /* Image prend toute la largeur disponible */
         margin: 28px auto; /* Centre l'image avec un espace */
         padding-bottom:30%;
-        padding-left: 1%;
+        padding-left: 10%;
     }
 
    .produits-images{
     display: block;
-    padding-left: 20%;
+    padding-left: 15%;
    }
    .produits-images img{
-    width:200%
+    padding-left: 2%;
+    padding-right: 2%;
+    width:300%
+    
    }
    .Notre_equipe{
     padding-left: 10%;
    }
    .blog-container{
+    padding-right: 5%;
+    /* padding-left: 5%; */
     display: block;
     
     max-width: 200%;
-    padding-left: 10%;
+    padding-left: 5%;
   }
   .blog-post{
+   
+    width: 40%;
     margin:3%;
 
   }
