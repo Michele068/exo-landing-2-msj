@@ -902,10 +902,12 @@ footer {
     
     nav{
         font-size: 35px;
+        
     }
     header nav {
         flex-direction: column; /* Aligne les éléments en colonne */
         padding: 1px; /* Réduit les marges */
+        padding: 20px;
     }
     header nav ul li a{ /*centre la nav bar */
         margin-right: 50px;
@@ -959,7 +961,7 @@ footer {
     display: block;
     
     max-width: 200%;
-    padding-left: 5%;
+    padding-left: 3%;
   }
   .blog-post{
     position:relative;
@@ -974,5 +976,14 @@ footer {
  }
  .input{
     padding-left: 5px;
+ }
+ button.join-btn{
+    margin-bottom: 6px;
+ }
+ .pricing-card{
+    margin-bottom: 20px;
+ }
+ .pricing-card.highlighted{
+    padding: 12px;
  }
 }
