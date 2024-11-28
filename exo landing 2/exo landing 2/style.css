@@ -954,7 +954,7 @@ footer {
     padding-left: 10%;
    }
    .blog-container{
-    padding-right: 5%;
+    
     /* padding-left: 5%; */
     display: block;
     
@@ -962,7 +962,9 @@ footer {
     padding-left: 5%;
   }
   .blog-post{
+    position:relative;
    
+   right:2%;
     width: 40%;
     margin:3%;
 
